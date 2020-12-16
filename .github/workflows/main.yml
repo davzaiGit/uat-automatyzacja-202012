@@ -32,3 +32,9 @@ jobs:
       # Runs linter
       - name: Run Linter
         run: npm run lint
+
+      - name: Run Test
+        run: npm test
+
+      - - name: Run E2E
+        run: npm e2e
