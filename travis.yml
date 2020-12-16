@@ -4,7 +4,10 @@ node_js:
 dist: trusty
 sudo: required
 addons:
-  chrome: stable
+  sources:
+    - google-chrome
+  packages:
+    - google-chrome-stable
 before_script:
   - npm install -g @angular/cli
 script:
