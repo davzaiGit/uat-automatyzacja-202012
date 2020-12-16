@@ -32,9 +32,3 @@ jobs:
       # Runs linter
       - name: Run Linter
         run: npm run lint
-
-      - name: Run Test
-        run: npm test --watch=false --browser=ChromeHeadless --no-sandbox
-
-      - name: Run E2E
-        run: npm e2e --protractor-config='e2e/ci.protractor.conf.js'
